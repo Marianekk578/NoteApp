@@ -16,6 +16,7 @@ public class User {
     private int age;
     @NotNull
     private String email;
+    private int numberOfNotes;
 
     public User(String firstName, String lastName, int age, @NotNull String email) {
         this.firstName = firstName;
