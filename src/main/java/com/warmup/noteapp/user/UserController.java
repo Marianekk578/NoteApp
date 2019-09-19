@@ -24,7 +24,7 @@ public class UserController {
             return userService.findUserByID(id);
         }
 
-    @GetMapping("/user/all")
+    @GetMapping("/users")
     public List<User> showAllUsers(){
         return userService.showAllUsers();
     }
