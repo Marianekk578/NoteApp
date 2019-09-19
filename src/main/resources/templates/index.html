@@ -2,12 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link href="css/index.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
     <title>NoteApp</title>
 </head>
 <style>
     body {
         background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+    }
+
+    #icon{
+        left: 40%;
+        top: 40%;
+        transform: translateX(-50%) translateY(-50%);
+        position: absolute;;
     }
 
     #display {
@@ -44,6 +51,7 @@
         transition: 0.8s;
         position: relative;
         overflow: hidden;
+        border-radius: 25px;
     }
 
     .btn1, .btn2 {
@@ -84,6 +92,9 @@
 
 </style>
 <body>
+    <div>
+        <img id="icon" src="note.jpg"/>
+    </div>
     <div id="display">
        <h1 id="mainHeader">Welcome to the NoteApp! :)</h1>
     </div>
